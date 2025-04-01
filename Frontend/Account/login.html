@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>FitRack | Login</title>
+</head>
+<body>
+    
+    <div class = "wrapper">
+
+        <!--Nav Bar-->
+        <nav class = "nav">
+    
+            <!--Website Name-->
+            <div class = "nav-name">
+                <p>FitRack</p>
+            </div>
+    
+            <!--Nav Menu-->
+            <div class = "nav-menu" id = "menu">
+                <ul>
+                    <li><a href = "../index.html" class = "link">Home</a></li>
+                    <li><a href = "#" class = "link">About</a></li>
+                    <li><a href = "Workout/workout.html" class = "link">Services</a></li>
+                    <li><a href = "../Contact/contact.html" class = "link">Contact</a></li>
+                    <li><a href = "login.html" class = "link showLink">Login</a></li>
+                    <li><a href = "register.html" class = "link showLink">Register</a></li>
+                </ul>
+            </div>
+    
+            <!--Sign in and Register-->
+            <div class = "nav-button">
+                <a href = "login.html"><button class = "btn" id = "login-btn">Login</button></a>
+                <a href = "register.html"><button class = "btn" id = "register-btn">Register</button></a>
+            </div>
+    
+            <!--Menu Btn-->
+            <div class = "menu-btn">
+                <i class = "fa-solid fa-bars" onclick = "showDropdown()"></i>
+            </div>
+    
+        </nav>
+    
+        <!--form-->
+        <div class = "form-container">
+
+            <form action = "#">
+               <h1 class = "header">Login</h1>
+   
+               <label for = "email">Email</label>
+               <input type = "text" class = "text-field" id = "email" placeholder = "Your Email">
+               <small class = "error"></small>
+
+               <label for = "password">Password</label>
+               <input type = "text" class = "text-field" id = "password" placeholder = "Password">
+               <small class = "error"></small>
+   
+               <div class = "form-submit">
+                  <input type = "submit" class = "submit-btn" id = "submit-btn" value = "Send Message">
+                  <p id = "success"></p>
+               </div>
+   
+            </form>
+        </div>
+    </div>
+<script src = "../Javascript/navbar.js"></script>
+<script src = "validateLogin.js"></script>
+</body>
+</html>

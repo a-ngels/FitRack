@@ -1,0 +1,35 @@
+.main {
+   margin: auto;
+   text-align: center;
+}
+
+#dayandbuttonDiv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#workoutDiv {
+   display: grid;
+   margin: 0 auto;
+}
+
+.exerciseDiv {
+   padding-bottom: 20px;
+}
+
+.workoutVideos {
+   border: 0;
+}
+
+@media screen and (min-width: 600px) {
+   #workoutDiv { 
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 900px) {
+   #workoutDiv { 
+      grid-template-columns: repeat(3, 1fr); 
+   }
+ }

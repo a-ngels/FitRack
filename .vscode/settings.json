@@ -1,0 +1,5 @@
+{
+  "editor.tabSize": 3,
+  "livePreview.defaultPreviewPath": "/Frontend/index.html",
+  "cmake.configureOnOpen": true
+}
